@@ -1,0 +1,24 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.imc;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author matil
+ */
+public class IMC {
+
+    public static void main(String[] args) {
+        String pesoString = JOptionPane.showInputDialog(null, "Insira seu peso em quilogramas: ");
+        double peso = Double.parseDouble(pesoString);
+        
+        String alturaString = JOptionPane.showInputDialog(null, "Insira a sua altura em metros: ");
+        double altura = Double.parseDouble(alturaString);
+        
+        double imc = peso / (altura * altura);
+        
+        JOptionPane.showMessageDialog(null, "Seu IMC é: " + imc);
+    }
+}
